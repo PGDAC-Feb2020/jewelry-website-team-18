@@ -1,0 +1,40 @@
+<div class="container-fluid">
+
+  <div class="row bg-dark sticky-top " style="height: 80px">
+    <div class="col d-flex align-items-center justify-content-end">
+      <button class="btn btn-secondary mr-1" [routerLink]="'/home'">HOME</button>
+
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+
+      <div class="col d-flex align-item-centre justify-content-end"> 
+
+        <button class="btn btn-secondary mr-1" [routerLink]="'/jewellery-collection'">JEWELLERY COLLECTION</button>
+        <button class="btn btn-secondary mr-1" [routerLink]="'/look-book'">LOOK BOOK</button>
+        <button class="btn btn-secondary mr-1" [routerLink]="'/ourstory'">OUR STORY</button>
+
+        <button class="btn btn-secondary mr-1" [routerLink]="'/contact'">CONTACT</button>
+        <button class="btn btn-secondary mr-1" [routerLink]="'/login'">LOGIN</button>
+        
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+
+  <style>
+    marquee {
+      
+     flex: 0vh;
+      width: 100%;
+      background-color: rgb(153, 146, 152);
+    }
+  </style>
+  <marquee direction="scroll">!!!WELCOME TO GO-DEEP JEWELLERY!!!</marquee>
+    
+
+  <router-outlet></router-outlet>
